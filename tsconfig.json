@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "codecs",
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "target": "ES2018",
+    "baseUrl": "src",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["src"]
+}
