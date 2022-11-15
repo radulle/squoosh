@@ -19,14 +19,15 @@ export const encode = {
     const optimise = (await import('@radulle/cra-squoosh-oxipng')).optimise;
     return optimise(arrayBuffer, options);
   },
-  resize: async function (
-    image: ImageData,
-    options: Partial<WorkerResizeOptions> & {
-      width: number;
-      height: number;
-    }
-  ) {
-    const resize = (await import('@radulle/cra-squoosh-resize')).default;
-    return resize(image, options);
-  },
 };
+
+export async function resize(
+  image: ImageData,
+  options: Partial<WorkerResizeOptions> & {
+    width: number;
+    height: number;
+  }
+) {
+  const resize = (await import('@radulle/cra-squoosh-resize')).default;
+  return resize(image, options);
+}
